@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  body {
+    /* background: linear-gradient(to right, #dfe9f3, #ffffff); */
+    background: linear-gradient(
+      to right,
+      rgba(253, 240, 213, 0.162),
+      rgb(193, 18, 31, 0.1),
+      rgba(102, 155, 188, 0.11)
+    );
+  }
+  color: #333;
+}
+
+header {
+  text-align: center;
+  background-color: rgb(193, 18, 31);
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: rgb(253, 240, 213);
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  color: rgb(253, 240, 213);
+}
+
+#search-section {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+}
+
+#searchForm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#searchQuery {
+  width: 80%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: rgb(193, 18, 31);
+  color: rgb(253, 240, 213);
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 1s;
+  border: 2px solid rgb(193, 18, 31);
+}
+
+button:hover {
+  background-color: rgb(253, 240, 213);
+  color: rgb(193, 18, 31);
+}
+
+#results-section {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#results-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+#results {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card {
+  width: 100%;
+  max-width: 300px;
+  background: #fff;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.details-btn,
+.contact-btn {
+  width: 45%;
+  margin: 0.5rem 2.5%;
+  text-align: center;
+}
+
+h2,
+h3 {
+  color: rgb(0, 92, 141);
+}
+strong {
+  color: rgb(102, 155, 188);
+}
+p {
+  color: rgb(139, 106, 42);
+}
+
+footer {
+  background-color: rgb(102, 155, 188);
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 0px;
+  padding: 1rem 0px;
+}
+footer p {
+  color: rgb(253, 240, 213);
+}

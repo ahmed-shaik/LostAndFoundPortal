@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submit Item</title>
+    <link rel="stylesheet" href="/css/submit.css" />
+    <!-- <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        color: #333;
+      }
+
+      header {
+        text-align: center;
+        background-color: #9ba2ff;
+        color: #fff;
+        padding: 1rem 0;
+        margin-bottom: 2rem;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+
+      header p {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+      }
+
+      form {
+        width: 80%;
+        max-width: 600px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      form label {
+        display: block;
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+
+      form input,
+      form textarea,
+      form select {
+        width: 100%;
+        margin-bottom: 1.5rem;
+        padding: 0.8rem;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      form input[type="file"] {
+        padding: 0.4rem;
+      }
+
+      form button {
+        background-color: #2a2e45;
+        color: #fff;
+        border: none;
+        padding: 0.8rem 1.5rem;
+        font-size: 1.1rem;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+
+      form button:hover {
+        background-color: #7a542e;
+      }
+
+      .success-message {
+        text-align: center;
+        color: #7a542e;
+        margin-top: 1rem;
+        display: none; /* Hidden by default */
+      }
+
+      footer {
+        text-align: center;
+        background-color: #2a2e45;
+        color: #fff;
+        padding: 1rem;
+        margin-top: 2rem;
+      }
+    </style> -->
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Submit Item</h1>
+      <p>Report a lost or found item to help us match it with its owner.</p>
+    </header>
+
+    <!-- Form -->
+    <form id="submitItemForm">
+      <!-- Dropdown for Lost/Found Selection -->
+      <label for="status">Have you Lost or Found an item?*</label>
+      <select id="status" name="status" required style="width: 101%">
+        <option value="" disabled selected>Select an option</option>
+        <option value="lost">Lost</option>
+        <option value="found">Found</option>
+      </select>
+
+      <label for="itemName">Item Name*</label>
+      <input
+        type="text"
+        id="itemName"
+        name="itemName"
+        placeholder="E.g., Wallet, Phone"
+        required
+      />
+
+      <label for="description">Description*</label>
+      <textarea
+        id="description"
+        name="description"
+        rows="4"
+        placeholder="Provide a detailed description of the item"
+        required
+      ></textarea>
+
+      <label for="date">Date Lost/Found*</label>
+      <input type="date" id="date" name="date" required />
+
+      <label for="location">Location*</label>
+      <input
+        type="text"
+        id="location"
+        name="location"
+        placeholder="E.g., Park, Library"
+        required
+      />
+
+      <label for="contactName">Your Name*</label>
+      <input
+        type="text"
+        id="contactName"
+        name="contactName"
+        placeholder="Your Full Name"
+        required
+      />
+
+      <label for="email">Email Address*</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="yourname@example.com"
+        required
+      />
+
+      <label for="phone">Phone Number*</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="123-456-7890"
+        required
+      />
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Lost and Found Portal. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

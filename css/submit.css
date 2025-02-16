@@ -1,0 +1,75 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+header {
+  font-size: 1.2rem;
+  text-align: center;
+  color: rgb(253, 240, 213);
+  background-color: rgb(193, 18, 31);
+  padding: 1rem 0;
+  margin-bottom: 1.5rem;
+}
+body {
+  /* background: linear-gradient(to right, #dfe9f3, #ffffff); */
+  background: linear-gradient(
+    to right,
+    rgba(253, 240, 213, 0.162),
+    rgb(193, 18, 31, 0.1),
+    rgba(102, 155, 188, 0.11)
+  );
+}
+body {
+  color: rgb(139, 106, 42);
+}
+body label {
+  color: rgb(0, 92, 141);
+}
+form {
+  width: 50%;
+  margin: 1em auto;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+}
+form label {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+form input,
+form textarea,
+form select {
+  width: 98%;
+  margin-bottom: 1.5rem;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  color: rgb(139, 106, 42);
+  border-radius: 10px;
+  margin-right: 10px;
+}
+form input[type="file"] {
+  padding: 0.7rem;
+}
+form button {
+  font-size: 1.3rem;
+  border: 2px solid rgb(193, 18, 31);
+  background-color: rgb(193, 18, 31);
+  color: rgb(253, 240, 213);
+  padding: 0.5rem 1.5rem;
+  border-radius: 7px;
+}
+button:hover {
+  transition-duration: 1s;
+  background-color: rgb(253, 240, 213);
+  color: rgb(193, 18, 31);
+}
+footer {
+  background-color: rgb(102, 155, 188);
+  text-align: center;
+  margin-top: 2rem;
+  padding: 3rem;
+  color: rgb(253, 240, 213);
+}
