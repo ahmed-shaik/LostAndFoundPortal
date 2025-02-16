@@ -107,30 +107,21 @@
     </header>
 
     <!-- Form -->
-    <form id="submitItemForm">
-      <!-- Dropdown for Lost/Found Selection -->
-      <label for="status">Have you Lost or Found an item?*</label>
-      <select id="status" name="status" required style="width: 101%">
-        <option value="" disabled selected>Select an option</option>
-        <option value="lost">Lost</option>
-        <option value="found">Found</option>
+    <form id="submitItemForm" action="/clgp1/php/submit_item.php" method="POST">
+      <label for="itemType">Item Type*</label>
+      <select id="itemType" name="item_type" required>
+        <option value="Lost">Lost</option>
+        <option value="Found">Found</option>
       </select>
 
       <label for="itemName">Item Name*</label>
-      <input
-        type="text"
-        id="itemName"
-        name="itemName"
-        placeholder="E.g., Wallet, Phone"
-        required
-      />
+      <input type="text" id="itemName" name="itemName" required />
 
       <label for="description">Description*</label>
       <textarea
         id="description"
         name="description"
         rows="4"
-        placeholder="Provide a detailed description of the item"
         required
       ></textarea>
 
@@ -138,40 +129,16 @@
       <input type="date" id="date" name="date" required />
 
       <label for="location">Location*</label>
-      <input
-        type="text"
-        id="location"
-        name="location"
-        placeholder="E.g., Park, Library"
-        required
-      />
+      <input type="text" id="location" name="location" required />
 
       <label for="contactName">Your Name*</label>
-      <input
-        type="text"
-        id="contactName"
-        name="contactName"
-        placeholder="Your Full Name"
-        required
-      />
+      <input type="text" id="contactName" name="contactName" required />
 
       <label for="email">Email Address*</label>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        placeholder="yourname@example.com"
-        required
-      />
+      <input type="email" id="email" name="email" required />
 
       <label for="phone">Phone Number*</label>
-      <input
-        type="tel"
-        id="phone"
-        name="phone"
-        placeholder="123-456-7890"
-        required
-      />
+      <input type="tel" id="phone" name="phone" required />
 
       <button type="submit">Submit</button>
     </form>
